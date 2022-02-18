@@ -17,4 +17,4 @@ meta:
     content: Documentation for the unofficial Spelunky 2 Lua modding API
 ---
 
-[Switch to Light Mode](light.html)
+[Switch to Dark Mode](/)
