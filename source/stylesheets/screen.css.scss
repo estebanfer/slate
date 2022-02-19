@@ -393,8 +393,9 @@ body.light {
     @extend %header-font;
     font-size: 19px;
     margin-top: 4em;
-    margin-bottom: 0;
+    margin-bottom: -1px;
     border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
     padding-top: 1.2em;
     padding-bottom: 1.2em;
     background-color: rgba(255, 255, 255, 0.04);
@@ -403,7 +404,7 @@ body.light {
   h3 {
     @extend %header-font;
     font-size: 17px;
-    margin-top: 0.5em;
+    margin-top: 0;
     margin-bottom: 0;
     border-top: 1px solid #555;
     padding-top: 1.2em;
