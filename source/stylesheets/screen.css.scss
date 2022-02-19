@@ -490,6 +490,15 @@ body.light {
     margin-top: 0;
   }
 
+  &>p {
+    margin-top: 10px;
+  }
+
+  blockquote p {
+    margin: 0 !important;
+  }
+
+
   img {
     max-width: 100%;
   }
@@ -591,7 +600,10 @@ body.light {
 
     @extend %right-col;
 
-    &>p { margin: 0; }
+    &>p {
+      margin: 0;
+      margin-top: 10px;
+    }
 
     a {
       color: #fff;
@@ -707,6 +719,7 @@ body.light {
   right: 0;
   background-color: #666;
   padding: 8px;
+  margin: 0;
   border-bottom-left-radius: 5px;
 }
 
