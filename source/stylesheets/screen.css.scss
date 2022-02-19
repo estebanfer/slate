@@ -378,10 +378,10 @@ body.light {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     margin-bottom: $h1-margin-bottom;
-    margin-top: 2em;
+    margin-top: 0;
     border-top: 1px solid #555;
     border-bottom: 1px solid #555;
-    background-color: rgba(255, 255, 255, 0.07);
+    background-color: rgba(255, 255, 255, 0.04);
   }
 
   h1:first-child, div:first-child + h1 {
@@ -397,7 +397,7 @@ body.light {
     border-top: 1px solid #555;
     padding-top: 1.2em;
     padding-bottom: 1.2em;
-    // background-image: linear-gradient(to bottom, rgba(#fff, 0.07), rgba(#fff, 0));
+    background-color: rgba(255, 255, 255, 0.04);
   }
 
   h3 {
@@ -405,6 +405,7 @@ body.light {
     font-size: 17px;
     margin-top: 0.5em;
     margin-bottom: 0;
+    border-top: 1px solid #555;
     padding-top: 1.2em;
     padding-bottom: 1.2em;
     // background-image: linear-gradient(to bottom, rgba(#fff, 0.2), rgba(#fff, 0));
@@ -560,12 +561,9 @@ body.light {
       background-color: darken($light-bg,2.4%);
     }
   }
-  h1 {
+  h1, h2, &>h4 {
     background-color: rgba(0, 0, 0, 0.07);
     border-color: #ccc;
-  }
-  &>h4 {
-    background-color: rgba(0, 0, 0, 0.05);
   }
 }
 
@@ -701,4 +699,17 @@ body.light {
 }
 .content a:active, .content a:hover {
   text-decoration: underline;
+}
+
+.content > p:first-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #666;
+  padding: 8px;
+  border-bottom-left-radius: 5px;
+}
+
+.light .content > p:first-child {
+  background-color: #111;
 }
