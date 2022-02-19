@@ -375,8 +375,8 @@ body.light {
   h1 {
     @extend %header-font;
     font-size: 25px;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
     margin-bottom: $h1-margin-bottom;
     margin-top: 0;
     border-top: 1px solid #555;
@@ -504,7 +504,7 @@ body.light {
   }
 
   code {
-    background-color: rgba(0,0,0,0.05);
+    background-color: lighten($main-bg, 7%);
     padding: 3px;
     border-radius: 3px;
     @extend %break-words;
@@ -561,6 +561,13 @@ body.light {
 }
 
 .light .content {
+  code {
+    background-color: darken($light-bg, 7%);
+  }
+  pre>code {
+    background: transparent;
+  }
+
   table {
     tr:nth-child(odd)>td {
       background-color: darken($light-bg,4.2%);
@@ -570,10 +577,14 @@ body.light {
       background-color: darken($light-bg,2.4%);
     }
   }
-  h1, h2, &>h4 {
+  h1, h2, h4 {
     background-color: rgba(0, 0, 0, 0.07);
-    border-color: #ccc;
   }
+
+  h1, h2, h3, th, tr:last-child {
+    border-color: #ccc !important;
+  }
+
 }
 
 ////////////////////////////////////////////////////////////////////////////////
