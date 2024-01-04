@@ -24,9 +24,8 @@ GEM
     fastimage (2.3.0)
     ffi (1.16.3)
     ffi (1.16.3-x64-mingw32)
-    haml (6.3.0)
-      temple (>= 0.8.2)
-      thor
+    haml (5.2.2)
+      temple (>= 0.8.0)
       tilt
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
@@ -133,6 +132,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  haml (< 6)
   middleman (~> 4.4)
   middleman-autoprefixer (~> 3.0)
   middleman-sprockets (~> 4.1)
