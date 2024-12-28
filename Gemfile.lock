@@ -144,7 +144,7 @@ DEPENDENCIES
   webrick
 
 RUBY VERSION
-   ruby 2.7.2p137
+   ruby 3.3.4p94
 
 BUNDLED WITH
    2.2.22
